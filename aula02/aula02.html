@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            width: 32%;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            align-items: center;
+            margin: 5rem auto 5rem;
+        }
+
+        p {
+            text-align: justify;
+            margin-left: 2rem;
+        }
+    </style>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Me livrei da maldição!</p>
+
+    <script>
+        // window.alert("Minha primeira mensagem!") //janela somente com a mensagem
+        // window.confirm("Está gostando de JavaScript?") //janela com botão ok e cancelar
+        //window.prompt("Qual é o seu nome?") //janela com caixa de resposta do nome
+
+        // var nome = window.prompt("Qual é o seu nome?") 
+
+        // window.alert('É um prazer em te conhecer, ' + nome + '!' )//O sinal de + significa concatenação
+
+        // var numero1 = Number.parseInt(window.prompt('Digite um número: '))
+        // var numero2 = Number.parseInt(window.prompt('Digite outro número: '))
+        // var soma = numero1 + numero2
+        // var resultado = window.alert('O resultado é: ' + soma) // neste caso o + serve para concatenação e não para adição
+
+        // number + number = adição
+        // string + string = concatenação
+
+        //É necessário fazer uma conversão para mudar a variavel de string para number utilizando Number.parseInt ou Number.parseFloat
+
+        //Para ficar mais simples, pode ser utilizado somente Number(window.prompt('Digite um número '))
+
+        var numero1 = Number(window.prompt('Digite um número: '))
+        var numero2 = Number(window.prompt('Digite outro número: '))
+        var soma = numero1 + numero2
+        //var resultado = window.alert('O resultado é: ' + String(soma))
+        window.alert(`A soma entre ${numero1} e ${numero2} é ${soma}`)
+        //Assum o próprio JS descobre se é um número inteito ou flutuante.
+
+
+
+    
+    </script>
+</body>
+</html>
