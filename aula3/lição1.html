@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detram</title>
+</head>
+<body>
+    
+    <h1>SISTEMA DE MULTAS</h1>
+    <h3>A velocidade permitida é de 60 Km/h</h3>
+    Velocidade de: <input type="number" name="vel" id="vel" placeholder="Velocidade">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+
+    </div>
+
+    <script>
+
+        function calcular() {
+
+            var velocidade = document.getElementById('vel')
+            var res = document.getElementById('res')
+            var vel = Number(velocidade.value)
+            res.innerHTML = `Sua velocidade é de: <strong>${vel} Km/h.</strong>`
+            if (vel > 60) {
+                res.innerHTML += ' Você está acima do limite de velocidade'
+            }
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    
+    <h1>Em que país você vive?</h1>
+
+    <p>Digite o país onde você vive: <input type="text" name="pais" id="pais"></p>
+    <input type="button" value="Confirmar" onclick="analisar()">
+    <div id="res">
+
+    </div>
+    <script>
+
+        function analisar() {
+
+            var country = document.getElementById('pais')
+            var res = document.getElementById('res')
+            var resu = pais.value
+            res.innerHTML = `Seu país de origem é: <strong>${resu}</strong>.`
+            
+            if (resu == 'Brasil', 'brasil') {
+                res.innerHTML += '<p> Logo, você é Brasileiro!</p>'
+            } else {
+                res.innerHTML += '<p> Você é estranjeiro</p>'
+            }
+            
+            // if (resu == 'usa') {
+            //    res.innerHTML += ' Logo, você é Americano!'
+            // }
+
+            // if (resu == 'Brasil') {
+            //     res.innerHTML += ' Logo, você é brasileiro!'
+            // }
+
+            // if (resu == 'Brasil') {
+            //     res.innerHTML += ' Logo, você é brasileiro!'
+            // }
+
+        }
+
+    </script>
+
+</body>
+</html>
